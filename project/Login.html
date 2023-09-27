@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bl'khidma - Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+   
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" style="width: 250px; height: 50px;"></a>
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Handymen.html">Handymen</a></li> 
+                  <li><a href="Services.html">Services</a></li>
+                  <li><a href="AboutUs.html">About Us</a></li>
+                  <li><a href="SignUp.html">Sign Up</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="login-background">
+    <div class="login-container">
+        <div class="welcome-text">Welcome Back</div>
+        <form>
+            <div class="form-group">
+                <label for="username-email"></label>
+                <input type="text" placeholder="username or email" id="username-email" name="username-email" required>
+            </div>
+            <div class="form-groupp">
+                <label for="password"></label>
+                <input type="password" placeholder="password" id="password" name="password" required>
+                <img src="eye-close.png" id="eyeicon">
+            </div>
+            <script>
+                
+                let eyeicon = document.getElementById("eyeicon");
+                let password = document.getElementById("password");
+                
+                eyeicon.onclick = function(){
+                    if(password.type == "password"){
+                        password.type = "text";
+                        eyeicon.src = "eye-open.png"
+                    }else{
+                         password.type = "password";
+                        eyeicon.src = "eye-close.png"
+                    }
+                }
+                
+            </script>
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Password</label>
+                </div>
+                <div class="forgot-password">Forgot password</div>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <p class="sign-up-link">Don't Have An Account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 bl'khidma</p>
+    </footer>
+</body>
+</html>
