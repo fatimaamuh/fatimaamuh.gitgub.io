@@ -239,3 +239,24 @@ input[type="submit"]:hover {
   background-color: #555;
 }
 
+
+/* CSS for the About Us section */
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+/* Override typing text styles */
+.about-us-section #typing-text {
+  animation: none; /* Remove typing animation */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Rounded rectangle button styling (you can adjust as needed) */
+.about-us-section .rounded-rectangle-button {
+  display: none; /* Hide the button for this section */
+}
+
