@@ -13,7 +13,7 @@ body {
 
 /* Header styling */
 header {
-  background-color: #ffffff;
+  background-color: #ffffff; 
   color: #2B3454;
   padding: 10px 0;
   position: sticky; /* Add position: sticky; */
