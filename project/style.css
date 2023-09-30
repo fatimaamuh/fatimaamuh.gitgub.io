@@ -189,17 +189,18 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Adjust the height as needed */
+  height: auto; /* Change the height to auto to adjust to the content */
 }
 
 .rounded-rectangle {
   background-color: #2B3454;
   color: white;
-  border-radius: 20px; /* Adjust the border radius to make it more or less rounded */
+  border-radius: 20px; /* Adjust the border radius as needed */
   padding: 20px; /* Adjust padding as needed */
   text-align: center;
-  width: 70%; /* Adjust the width as needed */
+  width: 80%; /* Adjust the width to your desired value */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect if desired */
+  max-width: 600px; /* Set a maximum width to limit the width of the container */
 }
 
 #typing-text {
