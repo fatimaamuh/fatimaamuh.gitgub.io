@@ -184,7 +184,9 @@ input[type="submit"]:hover {
 .main-background.services {
   background-image: url('servicepicc.jpg');
 }
-
+.main-background.aboutus {
+  background-image: url('servicepicc.jpg');
+}
 
 /* CSS for the typing effect */
 .text-container {
