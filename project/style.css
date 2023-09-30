@@ -272,7 +272,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: sticky; /* Change to position: sticky; */
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
@@ -289,7 +289,6 @@ footer {
 
 /* Footer section */
 .footer-section {
-  flex: 1;
   text-align: left;
 }
 
@@ -318,9 +317,11 @@ footer {
 }
 
 /* Copyright text */
-.footer-container p {
-  flex: 1;
-  text-align: right;
+.footer-section p {
   margin: 0;
 }
 
+/* Adjust the spacing between elements if needed */
+.footer-section:not(:last-child) {
+  margin-right: 20px;
+}
