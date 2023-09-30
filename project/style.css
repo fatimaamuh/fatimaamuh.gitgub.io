@@ -64,10 +64,13 @@ nav ul li a {
 
 /* Footer styling */
 footer {
-  background-color: #2B3454;
+background-color: #2B3454;
   color: white;
   text-align: center;
   padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Additional styles for Services page */
