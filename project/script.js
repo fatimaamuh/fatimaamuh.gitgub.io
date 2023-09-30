@@ -10,10 +10,21 @@ let textIndex = 0;
 let charIndex = 0;
 
 function typeText() {
-    if (textIndex < texts.length && charIndex < texts[textIndex].length) {
-        textContainer.textContent += texts[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeText, 50); // Adjust typing speed here
+    if (textIndex < texts.length) {
+        if (charIndex < texts[textIndex].length) {
+            textContainer.textContent += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 50); // Adjust typing speed here
+        } else {
+            // Text fully typed, move to the next text
+            textIndex++;
+            charIndex = 0;
+
+            // Clear the existing text content
+            textContainer.textContent = '';
+
+            setTimeout(typeText, 1000); // Pause before typing the next text
+        }
     }
 }
 
