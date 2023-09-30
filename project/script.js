@@ -1,9 +1,8 @@
 // JavaScript code for the typing effect
 const texts = [
-    "Say goodbye",
-    "to endless phone calls and confusing scheduling processes.",
+    "Say goodbye to endless phone calls and confusing scheduling processes.",
     "With our user-friendly platform, booking your desired service",
-    "is as easy as a few clicks(;", 
+    "is as easy as a few clicks(;",
 ];
 
 const textContainer = document.getElementById("typing-text");
@@ -20,7 +19,6 @@ function typeText() {
             // Text fully typed, move to the next text
             textIndex++;
             charIndex = 0;
-            setTimeout(typeText, 1000); // Pause before typing the next text
         }
     }
 }
