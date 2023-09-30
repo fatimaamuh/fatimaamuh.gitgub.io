@@ -64,11 +64,11 @@ nav ul li a {
 
 /* Footer styling */
 footer {
-background-color: #2B3454;
+  background-color: #2B3454;
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: sticky; /* Change to position: sticky; */
   bottom: 0;
   width: 100%;
 }
@@ -86,7 +86,7 @@ background-color: #2B3454;
 }
 
 .service-item {
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: calc(25% - 20px);
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
