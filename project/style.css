@@ -241,22 +241,25 @@ input[type="submit"]:hover {
 
 
 /* CSS for the About Us section */
-.about-us-section {
+.main-background.aboutus {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center; /* Position the background image to the left */
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to the left */
   align-items: center;
-  flex-direction: column;
-  height: auto;
+  padding-left: 20%; /* Adjust left padding as needed */
 }
 
 /* Override typing text styles */
-.about-us-section #typing-text {
+.main-background.aboutus #typing-text {
   animation: none; /* Remove typing animation */
   font-size: 18px; /* Adjust font size as needed */
 }
 
 /* Rounded rectangle button styling (you can adjust as needed) */
-.about-us-section .rounded-rectangle-button {
+.main-background.aboutus .rounded-rectangle-button {
   display: none; /* Hide the button for this section */
 }
-
