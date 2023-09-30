@@ -184,49 +184,50 @@ input[type="submit"]:hover {
   color: white; /* Text color for the "main" section */
 }
 
-/* CSS for the rounded rectangle and typing effect */
+
+/* CSS for the typing effect */
 .text-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Align the elements vertically */
-  height: auto; /* Change the height to auto to adjust to the content */
+  flex-direction: column;
+  height: auto;
 }
 
-/* Update the background color to #2B3454 */
+/* Rounded rectangle styling */
 .rounded-rectangle {
-  background-color: #2B3454; /* Change the background color to #F0C615 */
+  background-color: #F0C615;
   color: white;
-  border-radius: 20px; /* Adjust the border radius as needed */
-  padding: 20px; /* Adjust padding as needed */
+  border-radius: 20px;
+  padding: 20px;
   text-align: center;
-  width: 90%; /* Adjust the width to your desired value (e.g., 90%) */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect if desired */
-  max-width: 600px; /* Set a maximum width to limit the width of the container */
-  margin-bottom: 20px; /* Add spacing between the two containers */
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 #typing-text {
-  font-size: 24px; /* Adjust font size as needed */
+  font-size: 24px;
 }
 
-/* Style for the "Get Started" button */
+/* Rounded rectangle button styling */
 .rounded-rectangle-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Make the button container width 100% */
+  width: 100%;
 }
 
 .get-started-button {
-  background-color: #F0C615; /* Match the background color */
+  background-color: #F0C615;
   color: white;
   border: none;
-  border-radius: 20px; /* Adjust the border radius to match */
-  padding: 20px; /* Adjust padding as needed */
+  border-radius: 20px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -234,3 +235,4 @@ input[type="submit"]:hover {
 .get-started-button:hover {
   background-color: #555;
 }
+
