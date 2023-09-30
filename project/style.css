@@ -186,7 +186,7 @@ input[type="submit"]:hover {
   background-image: url('picpic.png');
 }
 
-#.main-background.services {
+.main-background.services {
   background-image: url('servicepicc.jpg');
 }
 .main-background.aboutus {
