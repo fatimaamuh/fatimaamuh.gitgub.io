@@ -192,8 +192,9 @@ input[type="submit"]:hover {
   height: auto; /* Change the height to auto to adjust to the content */
 }
 
+/* Update the background color to #F0C615 */
 .rounded-rectangle {
-  background-color: #2B3454;
+  background-color: #F0C615; /* Change the background color to #F0C615 */
   color: white;
   border-radius: 20px; /* Adjust the border radius as needed */
   padding: 20px; /* Adjust padding as needed */
