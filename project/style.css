@@ -16,8 +16,10 @@ header {
   background-color: #ffffff;
   color: #2B3454;
   padding: 10px 0;
+  position: sticky; /* Add position: sticky; */
+  top: 0; /* Add top: 0; to stick it to the top */
+  z-index: 1000; /* Add a high z-index value */
 }
-
 /* Container for the logo and navigation */
 .header-container {
   display: flex;
