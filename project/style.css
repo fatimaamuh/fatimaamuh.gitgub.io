@@ -175,15 +175,16 @@ input[type="submit"]:hover {
 
 /* Additional styles for the text container and rounded rectangle */
 .main-backgrounddd {
-  background-image: url('picpic.png'); /* Replace with your image file path */
-  background-size: cover;
+  background-image: url('servicepic.jpg');
+  background-size: 100%; /* Set background-size to 100% */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  padding: 20px;
-  color: white; /* Text color for the "main" section */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* CSS for the typing effect */
 .text-container {
