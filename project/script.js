@@ -1,4 +1,4 @@
-// JavaScript code for the typing effect
+// JavaScript code for the typing effect with line breaks
 const texts = [
     "Say goodbye to endless phone calls and confusing scheduling processes.",
     "With our user-friendly platform, booking your desired service",
@@ -16,12 +16,12 @@ function typeText() {
             charIndex++;
             setTimeout(typeText, 50); // Adjust typing speed here
         } else {
-            // Text fully typed, move to the next text
+            // Add a line break
+            textContainer.innerHTML += "<br>";
+
+            // Move to the next text
             textIndex++;
             charIndex = 0;
-
-            // Clear the existing text content
-            textContainer.textContent = '';
 
             setTimeout(typeText, 1000); // Pause before typing the next text
         }
