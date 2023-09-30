@@ -162,7 +162,7 @@ input[type="submit"]:hover {
   background-color: #555;
 }
 .main-backgroundd {
-  background-image: url('servicepic.jpg'); /* Replace 'main-bg.jpg' with the correct path to your background image */
+  background-image: url('servicepic.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
