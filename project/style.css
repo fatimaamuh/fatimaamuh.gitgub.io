@@ -176,13 +176,12 @@ input[type="submit"]:hover {
 }
 
 .main-background.home {
-  background-image: url('home-background.jpg');
+  background-image: url('picpic.png');
 }
 
 .main-background.services {
-  background-image: url('background.png');
+  background-image: url('servicepicc.jpg');
 }
-
 
 
 /* CSS for the typing effect */
