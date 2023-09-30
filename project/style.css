@@ -189,6 +189,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Align the elements vertically */
   height: auto; /* Change the height to auto to adjust to the content */
 }
 
@@ -199,34 +200,37 @@ input[type="submit"]:hover {
   border-radius: 20px; /* Adjust the border radius as needed */
   padding: 20px; /* Adjust padding as needed */
   text-align: center;
-  width: 80%; /* Adjust the width to your desired value */
+  width: 90%; /* Adjust the width to your desired value (e.g., 90%) */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect if desired */
   max-width: 600px; /* Set a maximum width to limit the width of the container */
+  margin-bottom: 20px; /* Add spacing between the two containers */
 }
 
 #typing-text {
   font-size: 24px; /* Adjust font size as needed */
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden;
-  border-right: 2px solid white; /* Add a typing cursor */
-  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+/* Style for the "Get Started" button */
+.rounded-rectangle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make the button container width 100% */
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
-  }
+.get-started-button {
+  background-color: #F0C615; /* Match the background color */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Adjust the border radius to match */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #555;
 }
