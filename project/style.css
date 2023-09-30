@@ -164,19 +164,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #555;
 }
-.main-backgroundd {
-  background-image: url('servicepicc.jpg'); 
+.main-background {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  height: 100vh;
-}
-
-/* Additional styles for the text container and rounded rectangle */
-.main-backgrounddd {
-  background-image: url('servicepic.jpg');
-  background-size: 100%; /* Set background-size to 100% */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -185,6 +174,16 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
 }
+
+.main-background.home {
+  background-image: url('home-background.jpg');
+}
+
+.main-background.services {
+  background-image: url('background.png');
+}
+
+
 
 /* CSS for the typing effect */
 .text-container {
