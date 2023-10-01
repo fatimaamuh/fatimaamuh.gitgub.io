@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ Page</title>
+  <!-- Link to your existing CSS file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
+</head>
+<body>
+ <h1>Frequently Asked Questions</h1>
+
+  <!-- FAQ items -->
+  <div class="faq" onclick="toggleAnswer('q1')">Is my personal information safe when I register on the platform?</div>
+  <div class="answer" id="q1">Yes, we prioritize the security of your personal information.</div>
+
+  <div class="faq" onclick="toggleAnswer('q2')">What should I do if I can't log in to my account?</div>
+  <div class="answer" id="q2">Use the "Forgot Password" option to reset your password or contact our support.</div>
+
+  <div class="faq" onclick="toggleAnswer('q3')">How can I communicate with the selected service provider after scheduling a service?</div>
+  <div class="answer" id="q3">You can message them through the app's messaging system.</div>
+
+  <div class="faq" onclick="toggleAnswer('q4')">What should I do if I need to cancel or reschedule a service I've already booked?</div>
+  <div class="answer" id="q4">You can typically do this through the app, but check the specific cancellation policy.</div>
+
+  <div class="faq" onclick="toggleAnswer('q5')">Can I schedule services for a future date and time?</div>
+  <div class="answer" id="q5">Yes, you can choose a date and time that suits your schedule.</div>
+
+  <div class="faq" onclick="toggleAnswer('q6')">What payment methods are accepted for service payments?</div>
+  <div class="answer" id="q6">We accept various payment methods, including credit/debit cards and mobile wallets.</div>
+
+  <div class="faq" onclick="toggleAnswer('q7')">What do I do if the service provider does not show up at the scheduled time?</div>
+  <div class="answer" id="q7">Contact our support team, and they will assist you in resolving the issue.</div>
+
+  <script>
+    // JavaScript function to toggle the visibility of answers
+    function toggleAnswer(questionId) {
+      var answer = document.getElementById(questionId);
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
