@@ -330,3 +330,20 @@ footer {
 .footer-section:not(:last-child) {
   margin-right: 20px;
 }
+
+.faq {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: blue; /* Change color for the question text */
+}
+
+.answer {
+  display: none;
+  margin-left: 20px;
+  color: green; /* Change color for the answer text */
+}
+
+.faq:hover {
+  text-decoration: underline; /* Add underline on hover for the question */
+}
