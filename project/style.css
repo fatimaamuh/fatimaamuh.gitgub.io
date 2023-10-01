@@ -75,8 +75,8 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: sticky; /* Change to position: sticky; */
-  bottom: 0;
+  /* Remove position: sticky; */
+  /* bottom: 0; */
   width: 100%;
 }
 
