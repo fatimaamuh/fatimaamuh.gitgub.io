@@ -241,6 +241,18 @@ footer {
   margin-right: 20px;
 }
 
+.reserve-background {
+  background-image: url('Background2.jpg');
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:  center; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
         
 
 
