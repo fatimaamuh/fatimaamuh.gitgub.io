@@ -1,3 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styling for the entire page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #2B3454;
+}
+
+/* Header styling */
+header {
+  background-color: #ffffff; 
+  color: #2B3454;
+  padding: 10px 0;
+  position: sticky; /* Add position: sticky; */
+  top: 0; /* Add top: 0; to stick it to the top */
+  z-index: 1000; /* Add a high z-index value */
+}
+/* Container for the logo and navigation */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo styling */
+
+.logo {
+  margin-right: auto; /* Push the logo to the left by pushing everything else to the right */
+}
+
+.logo img {
+  width: 250px;
+  height: 50px;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove margin from the first li to align it with the logo */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2B3454;
+}
+
+/* Add specific styles for different sections as needed */
+
+/* Footer styling */
+footer {
+  background-color: #2B3454;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  /* Remove position: sticky; */
+  /* bottom: 0; */
+  width: 100%;
+}
+
 /* CSS to style the FAQ box */
 .faq-box {
     background-color: #2B3454; /* Set the background color of the box */
