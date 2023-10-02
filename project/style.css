@@ -334,7 +334,7 @@ footer {
 /* CSS to style the FAQ box */
 .faq-box {
     background-color: #2B3454; /* Set the background color of the box */
-    color: #5B6D9F; /* Set the color of the questions */
+    color: #FFFFFF; /* Set the color of the questions */
     padding: 20px; /* Add padding to the box */
     border-radius: 10px; /* Add rounded corners to the box */
     width: 40%; /* Adjust the width of the box as needed */
