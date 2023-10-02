@@ -109,6 +109,19 @@ footer {
     text-decoration: underline;
 }
 
+.faq-background {
+  background-image: url('background.png'); /* Replace 'background-image.jpg' with your image file path */
+  background-size: 65%; /* Adjust the size as needed (e.g., 65% makes it 65% of the container width) */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center; /* Position the background image to the right */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Footer styling */
 footer {
   background-color: #2B3454;
