@@ -87,7 +87,7 @@ footer {
     border-radius: 10px; /* Add rounded corners to the box */
     width: 40%; /* Adjust the width of the box as needed */
     margin: 20px; /* Add margin to center the box on the left side */
-    float: left; /* Float the box to the left */
+    float: center; /* Float the box to the left */
 }
 
 /* Style for FAQ items */
