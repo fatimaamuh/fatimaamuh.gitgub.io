@@ -339,7 +339,7 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: rgba(0, 100, 200, 0.6); /* Yellowish-blue color with transparency */
+  background-color: rgba(255, 255, 255, 0.8); /* Yellowish-blue color with transparency */
   border-radius: 10px; /* Rounded corners for the container */
   padding: 20px; /* Add padding to create some space around the content */
   margin: 20px 0; /* Add margin to separate it from other content */
