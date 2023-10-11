@@ -331,6 +331,14 @@ footer {
   margin-right: 20px;
 }
 
+/* Container for the handymen */
+.handymen-container {
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+  background-color: rgba(255, 255, 255, 0.6); /* Background color with some transparency */
+  border-radius: 10px; /* Rounded corners for the container */
+  padding: 20px; /* Add padding to create some space around the content */
+  margin: 20px 0; /* Add margin to separate it from other content */
+}
 
 /* تنسيق مستطيل الموظف */
 .employee-box {
@@ -369,13 +377,4 @@ footer {
 
 .employee-info .star {
   margin: 0 2px;
-}
-
-.page-title {
-  margin: 20px 0; /* إضافة هامش للعنوان */
-  color: #2B3454; /* لون النص */
-  font-size: 24px; /* حجم الخط */
-  font-weight: bold; /* تحديد النص بخط عريض */
-  text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
-  text-decoration: underline; /* إضافة تسطير للنص */
 }
