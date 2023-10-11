@@ -349,7 +349,7 @@ footer {
 .employee-box {
   display: flex;
   align-items: center;
-  background-color: #F3F2FF; /* لون مختلف عن لون الصندوق */
+  background-color: #2C3351; /* لون مختلف عن لون الصندوق */
   border-radius: 10px; /* مستطيل مستدير الأطراف */
   margin: 10px 0;
   padding: 30px;
