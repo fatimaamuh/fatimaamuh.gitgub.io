@@ -334,7 +334,7 @@ footer {
 /* Container for the handymen */
 .handymen-container {
   backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-  background-image: url('blue.png'); /* Replace 'your-background-image.jpg' with your image file path */
+  background-image: url('blue1.png'); /* Replace 'your-background-image.jpg' with your image file path */
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -349,7 +349,7 @@ footer {
 .employee-box {
   display: flex;
   align-items: center;
-  background-color: #F0F0F0; /* لون مختلف عن لون الصندوق */
+  background-color: #181d2e; /* لون مختلف عن لون الصندوق */
   border-radius: 10px; /* مستطيل مستدير الأطراف */
   margin: 10px 0;
   padding: 10px;
