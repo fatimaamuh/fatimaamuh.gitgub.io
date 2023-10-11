@@ -370,3 +370,12 @@ footer {
 .employee-info .star {
   margin: 0 2px;
 }
+
+.page-title {
+  margin: 20px 0; /* إضافة هامش للعنوان */
+  color: #2B3454; /* لون النص */
+  font-size: 24px; /* حجم الخط */
+  font-weight: bold; /* تحديد النص بخط عريض */
+  text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+  text-decoration: underline; /* إضافة تسطير للنص */
+}
