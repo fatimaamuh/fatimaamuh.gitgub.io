@@ -5,80 +5,115 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.reservations-section,
-.services-section,
-.communication-section,
-.profile-section {
-  margin-bottom: 20px;
+/* Header styles */
+header {
+  background-color: #ffffff;
+  color: #2B3454;
+  padding: 10px 0;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1; /* Add z-index to layer it above other content */
 }
 
-.booking-list {
-  list-style: none;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  margin-right: auto; 
+}
+
+.logo img {
+  width: 250px;
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
-.booking-list li {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+nav ul li {
+  display: inline;
+  margin-left: 20px;
 }
 
-.booking-actions {
-  display: flex;
-  gap: 10px;
+nav ul li:first-child {
+  margin-left: 0;
 }
 
-.accept-booking,
-.reject-booking,
-.add-service,
-.send-message,
-.update-account {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+nav ul li a {
+  text-decoration: none;
+  color: #2B3454;
 }
 
-.accept-booking {
-  background-color: #2ecc71;
+/* Footer styles */
+footer {
+  background-color: #2B3454;
   color: white;
-}
-
-.reject-booking {
-  background-color: #e74c3c;
-  color: white;
-}
-
-.add-service {
-  background-color: #3498db;
-  color: white;
-}
-
-.send-message,
-.update-account {
-  background-color: #f39c12;
-  color: white;
-}
-
-.send-message {
-  padding: 8px 20px;
-}
-
-.profile-section input[type="text"] {
-  padding: 8px;
-  margin-bottom: 10px;
-  width: calc(100% - 16px);
-}
-
-.profile-section .update-account {
+  text-align: center;
+  padding: 10px 0;
   width: 100%;
 }
 
-.messaging-container textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  resize: vertical;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Media queries for responsiveness can be added if required */
+.footer-section {
+  text-align: left;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Account specific background */
+.account-background {
+  background-image: url('Background2.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
