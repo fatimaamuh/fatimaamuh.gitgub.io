@@ -250,3 +250,88 @@ footer {
   align-items: center;
 }
 
+/* Additional styles for Service Provider dashboard */
+.dashboard-container {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservations-section,
+.services-section,
+.communication-section,
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.booking-list {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-booking,
+.reject-booking,
+.add-service,
+.send-message,
+.update-account {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accept-booking {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.reject-booking {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.add-service {
+  background-color: #3498db;
+  color: white;
+}
+
+.send-message,
+.update-account {
+  background-color: #f39c12;
+  color: white;
+}
+
+.send-message {
+  padding: 8px 20px;
+}
+
+.profile-section input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: calc(100% - 16px);
+}
+
+.profile-section .update-account {
+  width: 100%;
+}
+
+.messaging-container textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  resize: vertical;
+}
+
+/* Media queries for responsiveness can be added if required */
+
