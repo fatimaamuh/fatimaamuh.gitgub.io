@@ -82,9 +82,3 @@
 }
 
 /* Media queries for responsiveness can be added if required */
-/* Additional styles for Service Provider dashboard */
-.dashboard-container {
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
