@@ -5,62 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - My Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for the form containers */
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" alt="Logo" style="width: 250px; height: 50px;"></a>
-            </div>
-            <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="Handymen.html">Handymen</a></li> 
-                  <li><a href="Services.html">Services</a></li>
-                  <li><a href="AboutUs.html">About Us</a></li>
-                  <li><a href="SignUp.html">Sign Up</a></li>
-                    <li><a href="Login.html">Login</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Header content -->
     </header>
 
     <main class="signup-background">
-      <div class="container">
-        <h2>Sign Up for bl'khidma</h2>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="tel" name="phone" placeholder="Phone Number" required><br>
-            <input type="text" name="area" placeholder="Area" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
-            <input type="submit" value="Sign Up">
-        </form>
-        <div class="login-link">
-            <p>Already have an account? <a href="Login.html">Log In</a></p>
+        <div class="container">
+            <h2>Sign Up for bl'khidma</h2>
+            <div class="radio-buttons">
+                <label for="userSignup">
+                    <input type="radio" id="userSignup" name="signupType" value="user" checked>User Sign Up
+                </label>
+                <label for="workerSignup">
+                    <input type="radio" id="workerSignup" name="signupType" value="worker">Worker Sign Up
+                </label>
+            </div>
+            
+            <!-- User Sign Up Form -->
+            <div class="form-container user active">
+                <form action="user_signup.php" method="post">
+                    <!-- User sign-up form inputs -->
+                    <input type="text" name="username" placeholder="Username" required><br>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                    <input type="text" name="area" placeholder="Area" required><br>
+                    <input type="password" name="password" placeholder="Password" required><br>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            
+            <!-- Worker Sign Up Form -->
+            <div class="form-container worker">
+                <form action="worker_signup.php" method="post">
+                    <!-- Worker sign-up form inputs -->
+                    <input type="text" name="workername" placeholder="Worker Name" required><br>
+                    <input type="email" name="worker_email" placeholder="Worker Email" required><br>
+                    <input type="tel" name="worker_phone" placeholder="Worker Phone Number" required><br>
+                    <input type="text" name="worker_area" placeholder="Worker Area" required><br>
+                    <input type="password" name="worker_password" placeholder="Password" required><br>
+                    <input type="password" name="confirm_worker_password" placeholder="Confirm Password" required><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
         </div>
-      </div>
     </main>
 
     <footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <a href="frequentlyaskedquestions.html">FAQ</a>
-        </div>
-        <div class="footer-section">
-            <h3>Follow Us</h3>
-            <ul class="social-media">
-                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <p>&copy; 2023 bl'khidma</p>
-        </div>
-    </div>
-</footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // JavaScript to handle radio button change
+        const radioButtons = document.querySelectorAll('input[name="signupType"]');
+        const formContainers = document.querySelectorAll('.form-container');
+
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', () => {
+                formContainers.forEach(container => container.classList.remove('active'));
+                document.querySelector(`.${radioButton.value}`).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
